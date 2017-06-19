@@ -53,7 +53,7 @@ void loop(){
    Bean.setLed(255,255,255);
    // Byte[0] : Commmand Type (0 - Speed, 1 - Direction, 2 - Stop)
    // Byte[1] : Motor Number
-   // Byte[2] : Value (Speed (0-100), Direction (0-Right,1-Left))
+   // Byte[2] : Value (Speed [0-255], Direction [0 - Clockwise, 1 - Counter-Clockwise])
    
    command = rec_buffer[0];
    motor = rec_buffer[1];
